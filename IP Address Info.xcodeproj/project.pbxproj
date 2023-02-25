@@ -12,6 +12,8 @@
 		CC7F4EFF29AA2980007003A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7F4EFE29AA2980007003A3 /* Assets.xcassets */; };
 		CC7F4F0229AA2980007003A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7F4F0129AA2980007003A3 /* Preview Assets.xcassets */; };
 		CC7F4F0A29AA662D007003A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0929AA662D007003A3 /* APIManager.swift */; };
+		CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0C29AA68D7007003A3 /* IPModel.swift */; };
+		CC7F4F1029AA691F007003A3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		CC7F4EFE29AA2980007003A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC7F4F0129AA2980007003A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC7F4F0929AA662D007003A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CC7F4F0C29AA68D7007003A3 /* IPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPModel.swift; sourceTree = "<group>"; };
+		CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				CC7F4EFA29AA297F007003A3 /* IP_Address_InfoApp.swift */,
 				CC7F4EFC29AA297F007003A3 /* ContentView.swift */,
+				CC7F4F0E29AA6902007003A3 /* ViewModel */,
+				CC7F4F0B29AA68AF007003A3 /* Model */,
 				CC7F4F0829AA6601007003A3 /* API */,
 				CC7F4EFE29AA2980007003A3 /* Assets.xcassets */,
 				CC7F4F0029AA2980007003A3 /* Preview Content */,
@@ -76,6 +82,22 @@
 				CC7F4F0929AA662D007003A3 /* APIManager.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CC7F4F0B29AA68AF007003A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC7F4F0C29AA68D7007003A3 /* IPModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC7F4F0E29AA6902007003A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +172,9 @@
 			files = (
 				CC7F4F0A29AA662D007003A3 /* APIManager.swift in Sources */,
 				CC7F4EFD29AA297F007003A3 /* ContentView.swift in Sources */,
+				CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */,
 				CC7F4EFB29AA297F007003A3 /* IP_Address_InfoApp.swift in Sources */,
+				CC7F4F1029AA691F007003A3 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
