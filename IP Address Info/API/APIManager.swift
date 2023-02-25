@@ -1,0 +1,54 @@
+//
+//  APIManager.swift
+//  IP Address Info
+//
+//  Created by Giorgio Giannotta on 25/02/23.
+//
+
+import SwiftUI
+
+//https://api.ipify.org/?format=json
+struct IP : Decodable {
+    var ip : String
+}
+
+//https://ipinfo.io/(ip)/geo
+struct IPGeoInfo : Decodable {
+    var ip: String
+    var city: String
+    var region: String
+    var country: String
+    var loc: String
+    var org: String
+    var postal: String
+    var timezone: String
+}
+
+//https://ipapi.co/(ip)/json/
+struct IPCoordinates : Decodable {
+    var longitude : Double
+    var latitude : Double
+}
+
+class APIManager: ObservableObject {
+    // Generic fetch API data function
+    func fetchData<T: Decodable>(url: String, model: T.Type, completion:@escaping(T) -> (), failure:@escaping(Error) -> ()) {
+        guard let url = URL(string: url) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else {
+                // If there is an error, return the error.
+                if let error = error { failure(error) }
+                return }
+            
+            do {
+                let serverData = try JSONDecoder().decode(T.self, from: data)
+                // Return the data successfully from the server
+                completion((serverData))
+            } catch {
+                // If there is an error, return the error.
+                failure(error)
+            }
+        }.resume()
+    }
+}
