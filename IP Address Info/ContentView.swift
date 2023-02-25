@@ -9,13 +9,33 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
-
-        var body: some View {
-            Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .constant(.follow))
-                .frame(width: .infinity, height: .infinity)
-                .edgesIgnoringSafeArea(.all)
+    @StateObject var vm = ViewModel()
+    
+    var body: some View {
+        ZStack {
+            Map(coordinateRegion: $vm.location)
+            
+                .ignoresSafeArea()
+//            Circle()
+//                .frame(width: 30, height: 30, alignment: .center)
+//                .foregroundColor(.blue.opacity(0.20))
+            
+            VStack {
+                Spacer()
+                VStack(spacing: 20) {
+                    Text("**IP**: \(vm.ipAddress)")
+                    Text("\(vm.ipGeoInfo.city!), \(vm.ipGeoInfo.country!), \(vm.ipGeoInfo.timezone!)")
+                }
+                .padding()
+                .frame(width: 330)
+                .background(.thickMaterial)
+                .cornerRadius(10)
+                .padding(.vertical, 50)
+            }
+            
         }
+        
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

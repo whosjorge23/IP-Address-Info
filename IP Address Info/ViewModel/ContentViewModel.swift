@@ -35,7 +35,7 @@ extension ContentView {
                 self.runOnMain {
                     self.ipAddress = result.ip
                     self.fetchGeoData(ip: result.ip)
-                    self.fetchLocation(ip: result.ip)
+//                    self.fetchLocation(ip: result.ip)
                 }
             } failure: { error in
                 self.runOnMain {
@@ -54,6 +54,9 @@ extension ContentView {
             api.fetchData(url: "https://ipinfo.io/\(ip)/geo", model: IPGeoInfo.self) { result in
                 self.runOnMain {
                     self.ipGeoInfo = result
+                    let resultLoc = result.loc
+                    let locationArray = resultLoc?.components(separatedBy: ",")
+                    self.location = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: Double(locationArray![0])!, longitude: Double(locationArray![1])!), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
                 }
             } failure: { error in
                 print("GeoData: \(error.localizedDescription)")
