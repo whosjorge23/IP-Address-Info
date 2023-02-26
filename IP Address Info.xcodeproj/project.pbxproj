@@ -13,7 +13,7 @@
 		CC7F4F0229AA2980007003A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC7F4F0129AA2980007003A3 /* Preview Assets.xcassets */; };
 		CC7F4F0A29AA662D007003A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0929AA662D007003A3 /* APIManager.swift */; };
 		CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0C29AA68D7007003A3 /* IPModel.swift */; };
-		CC7F4F1029AA691F007003A3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */; };
+		CC7F4F1029AA691F007003A3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0F29AA691F007003A3 /* ViewModel.swift */; };
 		CCA0663C29ABA4F700380A0D /* MapAnnotationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA0663B29ABA4F700380A0D /* MapAnnotationExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		CC7F4F0129AA2980007003A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC7F4F0929AA662D007003A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CC7F4F0C29AA68D7007003A3 /* IPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPModel.swift; sourceTree = "<group>"; };
-		CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CC7F4F0F29AA691F007003A3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CCA0663B29ABA4F700380A0D /* MapAnnotationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 		CC7F4F0E29AA6902007003A3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */,
+				CC7F4F0F29AA691F007003A3 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -186,7 +186,7 @@
 				CC7F4EFD29AA297F007003A3 /* ContentView.swift in Sources */,
 				CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */,
 				CC7F4EFB29AA297F007003A3 /* IP_Address_InfoApp.swift in Sources */,
-				CC7F4F1029AA691F007003A3 /* ContentViewModel.swift in Sources */,
+				CC7F4F1029AA691F007003A3 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

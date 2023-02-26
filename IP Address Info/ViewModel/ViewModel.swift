@@ -1,5 +1,5 @@
 //
-//  ContentViewModel.swift
+//  ViewModel.swift
 //  IP Address Info
 //
 //  Created by Giorgio Giannotta on 25/02/23.
