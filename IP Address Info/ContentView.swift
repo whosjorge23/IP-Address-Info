@@ -13,12 +13,16 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.location)
-            
+//            Map(coordinateRegion: $vm.location)
+            Map(coordinateRegion: $vm.location, annotationItems: [$vm.annotation]) { annotation in
+                MapAnnotation(coordinate: vm.annotation.coordinate) {
+                    Circle()
+//                        .strokeBorder(.red.opacity(0.80), lineWidth: 4)
+                        .foregroundColor(.orange.opacity(0.50))
+                        .frame(width: 30, height: 30)
+                }
+            }
                 .ignoresSafeArea()
-//            Circle()
-//                .frame(width: 30, height: 30, alignment: .center)
-//                .foregroundColor(.blue.opacity(0.20))
             
             VStack {
                 Spacer()

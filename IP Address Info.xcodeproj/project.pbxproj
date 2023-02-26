@@ -14,6 +14,7 @@
 		CC7F4F0A29AA662D007003A3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0929AA662D007003A3 /* APIManager.swift */; };
 		CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0C29AA68D7007003A3 /* IPModel.swift */; };
 		CC7F4F1029AA691F007003A3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */; };
+		CCA0663C29ABA4F700380A0D /* MapAnnotationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA0663B29ABA4F700380A0D /* MapAnnotationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CC7F4F0929AA662D007003A3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CC7F4F0C29AA68D7007003A3 /* IPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPModel.swift; sourceTree = "<group>"; };
 		CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CCA0663B29ABA4F700380A0D /* MapAnnotationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				CC7F4EFA29AA297F007003A3 /* IP_Address_InfoApp.swift */,
 				CC7F4EFC29AA297F007003A3 /* ContentView.swift */,
+				CCA0663A29ABA4D300380A0D /* Extension */,
 				CC7F4F0E29AA6902007003A3 /* ViewModel */,
 				CC7F4F0B29AA68AF007003A3 /* Model */,
 				CC7F4F0829AA6601007003A3 /* API */,
@@ -98,6 +101,14 @@
 				CC7F4F0F29AA691F007003A3 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCA0663A29ABA4D300380A0D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CCA0663B29ABA4F700380A0D /* MapAnnotationExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC7F4F0A29AA662D007003A3 /* APIManager.swift in Sources */,
+				CCA0663C29ABA4F700380A0D /* MapAnnotationExtension.swift in Sources */,
 				CC7F4EFD29AA297F007003A3 /* ContentView.swift in Sources */,
 				CC7F4F0D29AA68D7007003A3 /* IPModel.swift in Sources */,
 				CC7F4EFB29AA297F007003A3 /* IP_Address_InfoApp.swift in Sources */,
