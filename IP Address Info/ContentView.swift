@@ -25,6 +25,8 @@ struct ContentView: View {
                 VStack(spacing: 20) {
                     Text("**IP**: \(vm.ipAddress)")
                     Text("\(vm.ipGeoInfo.city!), \(vm.ipGeoInfo.country!), \(vm.ipGeoInfo.timezone!)")
+                    Text(vm.ipGeoInfo.org!)
+                    Text(vm.ipGeoInfo.loc!)
                 }
                 .padding()
                 .frame(width: 330)

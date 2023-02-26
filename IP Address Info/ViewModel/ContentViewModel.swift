@@ -11,7 +11,7 @@ import MapKit
 extension ContentView {
     final class ViewModel: ObservableObject {
         @Published var ipAddress: String = "Retrieving..."
-        @Published var ipGeoInfo = IPGeoInfo(ip: "IP", city: "City", region: "Region", country: "Country", timezone: "Timezone")
+        @Published var ipGeoInfo = IPGeoInfo(ip: "IP", city: "City", region: "Region", country: "Country", loc: "37.34453, 15.43565", org: "Organization Name", timezone: "Timezone")
         @Published var location = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
         
         private let api = APIManager()
