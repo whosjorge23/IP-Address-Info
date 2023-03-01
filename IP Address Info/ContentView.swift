@@ -13,6 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            
 //            Map(coordinateRegion: $vm.location)
             Map(coordinateRegion: $vm.location, annotationItems: [$vm.annotation]) { annotation in
                 MapAnnotation(coordinate: vm.annotation.coordinate) {
@@ -25,6 +26,12 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack {
+                Text("What's your IP Location")
+                    .font(.title2)
+                    .padding()
+                    .frame(width: 330)
+                    .background(.thinMaterial)
+                    .cornerRadius(10)
                 Spacer()
                 VStack(spacing: 20) {
                     Text("**IP**: \(vm.ipAddress)")
@@ -34,7 +41,7 @@ struct ContentView: View {
                 }
                 .padding()
                 .frame(width: 330)
-                .background(.thickMaterial)
+                .background(.thinMaterial)
                 .cornerRadius(10)
                 .padding(.vertical, 50)
             }

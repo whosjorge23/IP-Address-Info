@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 class APIManager: ObservableObject {
     // Generic fetch API data function
     func fetchData<T: Decodable>(url: String, model: T.Type, completion:@escaping(T) -> (), failure:@escaping(Error) -> ()) {
